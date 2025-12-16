@@ -27,13 +27,32 @@ h4 {
 }
 h3 {
 	font-size: 30px;
+	font-family: 'racing sans one', sans-serif;
 }
 
 
-/*Don't worry about this section yet*/
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* NEW: Celtics-green glowing hover effect for interactive elements */
+.glow-hover {
+  transition: all 0.25s ease-in-out;
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 12px #007A33, 0 0 24px #007A33;
+  transform: translateY(-2px);
+}
+
+/*MOBILE FORMATT*/
 @media only screen and (max-width: 767px)
 {
  .list {
+ 	border: 2px solid darkgray;
+ 	padding: 10px;
  	float: none;
  	min-width: 90%;
  	margin-left: 10px;
@@ -45,12 +64,5 @@ h3 {
  	margin-right: 10px;
  }
 }
-/* NEW: Celtics-green glowing hover effect for interactive elements */
-.glow-hover {
-  transition: all 0.25s ease-in-out;
-}
 
-.glow-hover:hover {
-  box-shadow: 0 0 12px #007A33, 0 0 24px #007A33;
-  transform: translateY(-2px);
 }
